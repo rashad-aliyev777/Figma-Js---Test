@@ -1,0 +1,422 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --qara-reng-aciq: #222;
+    --ag-reng: #fff;
+    --spandaki-reng:#FF8A56;
+    --projects-reng : #B16CEA;
+    --qara-reng: #000;
+    --bozumtul: #666;
+    --services-reng:#FF5E69;
+    --sekil-bottom-reng:#3C46FF;
+    --fq-reng:#FF8A56;
+    --testimonial:#4353FF;
+    --overlay-menu-reng:#aaa;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar overlay menu start*/
+.overlay-menu {
+    height: 100vh;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: width 1.2s ease;
+    overflow-x: hidden;
+
+}
+.overlay-menu a {
+    color: var(--overlay-menu-reng);
+    font-size: 34px;
+    margin-top: 14px;
+    transition: all 0.8s ease;
+}
+
+.overlay-menu a:hover {
+    color: var(--ag-reng);
+    transform: translateX(45px);
+}
+.fa-xmark {
+    color: var(--ag-reng);
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.nav-links-menu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   justify-content: center;
+    
+}
+/* navbar overlay menu end */
+
+
+/* header hissesi  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 112.5px 16.7px;
+    align-items: center;
+}
+.nav-sag a {
+    color: var(--qara-reng);
+    padding-right: 20px;
+}
+.fa-bars {
+    display: none;
+}
+
+@media(max-width:991px){
+    .header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+     }
+    @media(max-width:768px){
+        .header{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .nav-sag {
+            display: none;
+        }
+        .fa-bars {
+            display: block;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px;
+        }
+     }
+     @media(max-width:576px){
+        .header {
+            padding-left: 20px;
+            padding-right: 20px;
+            }
+        }
+
+        /* header hissesi qurtardi */
+
+
+
+
+
+
+        /* projects hissesi start */
+
+        .projects-section {
+            padding: 20px 113px;
+        }
+
+        .projects-section h5 {
+            text-transform: uppercase;
+            color: var(--projects-reng);
+            font-weight: 700;
+            font-size: 22px;
+            letter-spacing: 4px;
+        }
+
+        .view-all-projects {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .view-all-projects h3 {
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 59px;
+            margin: 20px 0 40px;
+        }
+
+        .view-all-projects button {
+            background: var(--qara-reng);
+            color: var(--ag-reng);
+            padding: 10px;
+            border-radius: 20px 80px;
+            cursor: pointer;
+            transition: border-radius 0.5s,color 0.5s ease;
+        }
+
+        .view-all-projects button:hover {
+            border-radius: 10px; 
+            color: chocolate;
+        }
+
+        .card {
+            width: 486px;
+            height: 468px;
+        }
+
+        .card__top {
+            width: 100%;
+            height: 305px;
+        }
+        .card__top img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card__bottom h6 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--sekil-bottom-reng);
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .card__bottom h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 26px;
+            margin: 17px 0 19px;
+        }
+
+        .card__bottom a {
+            color: var(--qara-reng);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .card__bottom img {
+            margin-left: 10px;
+        }
+
+        @media(max-width:768px) {
+            .projects-section {
+                padding: 20px;
+            }
+        }
+
+        /* projects hissesi end */
+
+
+
+
+
+        /* blog section basla */
+
+        .latest-blogs-hissesi {
+            background: var(--qara-reng-aciq);
+            color: var(--ag-reng);
+            display: flex;
+            padding: 25px 0 10px 113px;
+
+        }
+        .latest-blogs-hissesi .latest-sol h6 {
+            text-transform: uppercase;
+            color: var(--fq-reng);
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 5px;
+        }
+
+        .latest-blogs-hissesi .latest-sol h2 {
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            margin: 20px 0 32px;
+        }
+
+        .latest-blogs-hissesi a {
+            color: var(--ag-reng);
+        }
+
+        .latest-sol {
+            flex-basis: 40%;
+            padding-top: 40px;
+        }
+        
+        .latest-sag {
+            flex: 1;
+        }
+
+        .latest-sag .blog {
+            border-bottom: 1px solid #e5e5e5;
+            padding-top: 2.56rem;
+            padding-bottom: 2.12rem;
+        }
+
+        .latest-sag .blog h3 {
+            margin: 30px 0;
+        }
+
+
+
+
+
+/* products hissesi start */
+
+        .products-designer-section {
+            padding: 20px 113px 40px 112px;
+        }
+
+        .products-designer-section h6 {
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 4px;
+            color: var(--services-reng);
+            text-transform: uppercase;
+            padding-left: 7px;
+        }
+
+        .products-designer-section .thats-me h2 {
+            font-weight: 700;
+            line-height: 59.4px;
+            font-size: 54px;
+        }
+
+        .products-designer-section .thats-me {
+            display: flex;
+            justify-content: space-between;
+            margin: 11px 0 30px;
+        }
+
+        .products-designer-section .thats-me p {
+            font-size: 22px;
+            line-height: 40px;
+        }
+
+        .products-images-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-sol {
+            width: 338px;
+            height: 626px;
+            min-width: 300px;
+        }
+
+        .product-sol img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .product-orta {
+            width: 507px;
+            height: 626px;
+            margin: 0 16px;
+            min-width: 400px;
+        }
+
+        .product-orta img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .product-sag-top {
+            width: 338px;
+            height: 305px;
+            margin-bottom: 16px;
+            min-width: 300px;
+        }
+
+        .product-sag-top img {
+            width: 100%;
+            height: 100%;
+        }
+        .product-sag-bottom {
+            width: 338px;
+            height: 305px;
+            min-width: 300px;
+        }
+
+        .product-sag-bottom img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media(max-width:1460px) {
+            .products-images-section {
+                justify-content: space-around;
+            }
+            .product-sag-teref {
+                display: none;
+            }
+        }
+
+        @media(min-width:1024px) {
+            .products-designer-section {
+                padding: 40px 113px 40px 112px;
+            }
+        }
+
+        @media(max-width:576px) {
+            .product-orta {
+                margin: -50px;
+            }
+        }
+
+        @media(max-width:460px) {
+            .product-orta {
+                display: none;
+            }
+        }
+/* products hissesi end */
+
+
+/* faq hissesi start */
+
+    .faq-section {
+        background: var(--qara-reng-aciq);
+        color: var(--ag-reng);
+        padding-top: 40px;
+    }
+    
+    .faq-section h6 {
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: var(--spandaki-reng);
+        text-align: center;
+    }
+
+    .faq-section h3 {
+        font-weight: 700;
+        line-height: 59.4px;
+        font-size: 54px;
+        text-align: center;
+    }
+
+    .faq {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .question {
+        border-bottom: 1px solid rgba(229, 229, 229, 0.30);
+    }
+
+    .accordion-header {
+        padding: 27px 0 49px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+    }
+/* faq hissesi end */

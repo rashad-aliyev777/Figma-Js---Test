@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "xeberin_tarixi":"April 17",
+        "xeberin_basligi" : "Design tips for designers, that cover everything you need"
+    },
+    {
+        "id": 2,
+        "xeberin_tarixi":"May 2",
+        "xeberin_basligi" : "How to build rapport with your web design clients"
+    },
+    {
+        "id": 3,
+        "xeberin_tarixi":"June 12",
+        "xeberin_basligi" : "Top 6 free website mockup tools 2021"
+    },
+    {
+        "id": 4,
+        "xeberin_tarixi":"July 13",
+        "xeberin_basligi" : "Logo design trends to avoid in 2021"
+    }
+]
