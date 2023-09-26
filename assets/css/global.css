@@ -418,5 +418,7 @@ body {
     .accordion-content {
         max-height: 0;
         overflow: hidden;
+        margin-bottom: 20px;
+        transition: max-height 0.8s ease;
     }
 /* faq hissesi end */

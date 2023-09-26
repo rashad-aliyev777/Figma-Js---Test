@@ -9,13 +9,22 @@ const overlayMenyuDivi = document.querySelector(".overlay-menu")
 
 
 
-navbarIconu.onclick = function() {
-    document.querySelector(".overlay-menu").style.width="100%" 
-}
+// navbarIconu.onclick = function() {
+//     document.querySelector(".overlay-menu").style.width="100%" 
+// }
 
-baglamaqIconu.onclick = function() {
-    document.querySelector(".overlay-menu").style.width="0" 
+// baglamaqIconu.onclick = function() {
+//     document.querySelector(".overlay-menu").style.width="0" 
+// }
+
+navbarIconu.addEventListener('click',function() {
+  overlayMenyuDivi.style.width="100%"
 }
+  )
+
+  baglamaqIconu.addEventListener('click',function() {
+    overlayMenyuDivi.style.width="0"
+  })
 
 
 // overlay menyu iconuna yaradilan funksiya end
@@ -97,22 +106,36 @@ const swiper = new Swiper(".mySwiper", {
 
 // Sweaper hissesi end
 
-
+AOS.init();
 
 // faq hissesinde klik zamani yaranan cavab start
 
-const accordionBasligi = document.querySelectorAll("accordion-header")
+const accordionBasligi = document.querySelectorAll(".accordion-header")
 
   for(let i=0; i<8; i++) {
     accordionBasligi[i].addEventListener("click",function() {
-      alert("Kodumuz calisirmi ?")
+
+      const moderatorVerdiyiCavabDivi = this.nextElementSibling
+
+      console.log(moderatorVerdiyiCavabDivi);
+
+      if(moderatorVerdiyiCavabDivi.style.maxHeight) {
+        moderatorVerdiyiCavabDivi.style.maxHeight = null
+
+
+      }
+
+      else {
+        moderatorVerdiyiCavabDivi.style.maxHeight = "100px"
+      }
+
     })
   }
 
-  console.log(accordionBasligi)
+  
+
 // faq hissesinde klik zamani yaranan cavab end
 
 
 
 
-AOS.init();
